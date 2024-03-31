@@ -1,1 +1,2 @@
 {"operation": "create", "resource": {"type": "pipeline", "uuid": "ingest_purchase_options_github_to_bigquery"}, "timestamp": 1711912118, "user": null}
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "keeb_finder_dbt_models_bigquery"}, "timestamp": 1711914717, "user": null}

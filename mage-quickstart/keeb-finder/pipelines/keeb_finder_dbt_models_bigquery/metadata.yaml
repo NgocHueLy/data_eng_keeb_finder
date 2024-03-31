@@ -1,0 +1,98 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dbt_profile_target: dev
+    dbt_profiles_file_path: keeb_finder/profiles.yml
+    dbt_project_name: keeb_finder
+    file_path: keeb_finder/models/base/base_keyboard_details.sql
+    file_source:
+      path: keeb_finder/models/base/base_keyboard_details.sql
+      project_path: keeb_finder
+    limit: 1000
+  downstream_blocks:
+  - keeb_finder/models/core/core-keyboards
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: keeb_finder/models/base/base_keyboard_details
+  retry_config: null
+  status: failed
+  timeout: null
+  type: dbt
+  upstream_blocks: []
+  uuid: keeb_finder/models/base/base_keyboard_details
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dbt_profile_target: dev
+    dbt_profiles_file_path: keeb_finder/profiles.yml
+    dbt_project_name: keeb_finder
+    file_path: keeb_finder/models/base/base_purchase_options.sql
+    file_source:
+      path: keeb_finder/models/base/base_purchase_options.sql
+      project_path: keeb_finder
+    limit: '10'
+  downstream_blocks:
+  - keeb_finder/models/core/core-keyboards
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: keeb_finder/models/base/base_purchase_options
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: dbt
+  upstream_blocks: []
+  uuid: keeb_finder/models/base/base_purchase_options
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dbt_profile_target: dev
+    dbt_profiles_file_path: keeb_finder/profiles.yml
+    dbt_project_name: keeb_finder
+    file_path: keeb_finder/models/core/core-keyboards.sql
+    file_source:
+      path: keeb_finder/models/core/core-keyboards.sql
+      project_path: keeb_finder
+    limit: '10'
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: keeb_finder/models/core/core-keyboards
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - keeb_finder/models/base/base_keyboard_details
+  - keeb_finder/models/base/base_purchase_options
+  uuid: keeb_finder/models/core/core-keyboards
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-03-31 19:51:56.462883+00:00'
+data_integration: null
+description: create and load dbt models to big query
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: keeb_finder_dbt_models_bigquery
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: keeb_finder_dbt_models_bigquery
+variables_dir: /home/src/mage_data/keeb-finder
+widgets: []
