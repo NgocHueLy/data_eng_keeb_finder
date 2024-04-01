@@ -7,3 +7,123 @@ sources:
     tables:
       - name: keyboard_details
       - name: purchase_options
+
+models:
+  - name: base_keyboard_details
+    description: "model from source keeb-finder.product.keyboard_details "
+    columns:
+      - name: product_tilte
+        data_type: string
+        description: "title scraped for each product tile found in https://keeb-finder.com/keyboards"
+
+      - name: product_price
+        data_type: int64
+        description: "price scraped for each product tile found in https://keeb-finder.com/keyboards"
+
+      - name: category_vendor
+        data_type: string
+        description: "vendor scraped for each product tile 'View on' found in https://keeb-finder.com/keyboards"
+
+      - name: category_voucher
+        data_type: float64
+        description: "coupon tag scraped for each product tile '*%'' found in https://keeb-finder.com/keyboards"
+
+      - name: is_new
+        data_type: string
+        description: "new tag scraped for each product tile 'New!'' found in https://keeb-finder.com/keyboards"
+
+      - name: listing_link
+        data_type: string
+        description: "link to detail listing for each product tile found in https://keeb-finder.com/keyboards"
+
+      - name: brand
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: product_type
+        data_type: string
+        description: detail listing's Technical Specifications table field""
+
+      - name: keyboard_profile
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: layout_size
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: layout_standard
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: layout_ergonomics
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: is_hot_swappable
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: has_knob_support
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: has_rgb_support
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: has_display_support
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: has_qmk_via
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: connection
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: is_wireless
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: battery_capacity
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: mount_style
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: case_material
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: keycap_material
+        data_type: string
+        description: "detail listing's Technical Specifications table field"
+
+      - name: scraping_date
+        data_type: date
+        description: "running scraper date"
+
+  - name: base_purchase_options
+    description: ""
+    columns:
+      - name: listing_link
+        data_type: string
+        description: "detail listing's for each keyboard"
+
+      - name: location
+        data_type: string
+        description: "keyboard detail listing purchase option table field"
+
+      - name: stock_status
+        data_type: string
+        description: "keyboard detail listing purchase option table field"
+
+      - name: scraping_date
+        data_type: date
+        description: "running scraper date"
+
