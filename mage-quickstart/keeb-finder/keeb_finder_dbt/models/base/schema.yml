@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: base
+    database: keeb-finder
+    schema: product
+    tables:
+      - name: keyboard_details
+      - name: purchase_options

@@ -1,0 +1,13 @@
+keeb_finder_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: keeb-finder
+      dataset: models
+      threads: 4 # Must be a value of 1 or greater
+      #VSCODE
+      # keyfile: D:\1_projects\keeb_finder\mage-quickstart\keeb-finder\keeb-finder-21b3458e31d2.json      
+      # Mage
+      keyfile: /home/src/keeb-finder/keeb-finder-21b3458e31d2.json
