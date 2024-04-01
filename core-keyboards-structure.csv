@@ -1,0 +1,27 @@
+COLUMN,TYPE,DESCRIPTION
+product_tilte,STRING,title of product in category page
+product_price,INT64,price of product in category page
+category_vendor,STRING,product vendor appears inside 'View on' tag in category page
+category_voucher,FLOAT64,coupon in category page
+is_new,STRING,whether a new tag in product tile in category page
+listing_link,STRING,detail listing of product
+brand,STRING,product's brand
+product_type,STRING,type of product: keyboard or keyboard kit
+keyboard_profile,STRING,normal or low keyboard profile
+layout_size,STRING,keyboard layout size
+layout_standard,STRING,layout standard
+layout_ergonomics,STRING,"whether keyboard is normal, alice, split or ortholinear"
+is_hot_swappable,STRING,is the keyboard hot swappable
+has_knob_support,STRING,does keyboard has knob support
+has_rgb_support,STRING,does keyboard has rgb support
+has_display_support,STRING,does keyboard has display support
+has_qmk_via,STRING,does keyboard has QMK/VIA suport
+connection,STRING,"keyboard connection type wired, wireless, bluetooth, 2.4GHz"
+is_wireless,STRING,does keyboard has wireless connection
+battery_capacity,STRING,"no battery, unknown or how many mAh of battery capacity"
+mount_style,STRING,"keyboard mounting styles, how the plate or PCB is secured in the keyboard housing"
+case_material,STRING,material of keyboard case
+keycap_material,STRING,material of included keycap
+scraping_date,DATE,data scrapping date
+location,STRING,keyboard vendor location
+stock_status,STRING,stock status of each vendor
