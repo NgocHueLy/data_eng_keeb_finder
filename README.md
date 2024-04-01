@@ -112,6 +112,7 @@ Check this video [here](https://youtu.be/c3ZppKdSG5A?t=212) for details
 
 
 ## Setup Looker Studio
+ Add data source from BigQuery/core-keyboards table
 
 # Next Steps
 - More automation with Mage, scape data with Mage and load to GCS instead of GitHub
