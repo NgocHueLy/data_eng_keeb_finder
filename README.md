@@ -23,7 +23,7 @@ Disclaimer: Some keyboards will be missing because of bad url format, or missing
 - [Looker Studio](https://lookerstudio.google.com/) to visualize the transformed dataset
 - [Pandas](https://pandas.pydata.org/) to import and transform dataset
 - [Terraform](https://www.terraform.io/) for version control of our infrastructure
-- [Docker](https://docker.io/) for Mage image. I also update dbt to latest version iva Mage terminal as the original dbt version in Mage not working
+- [Docker](https://docker.io/) for Mage image. I also update dbt to latest version via Mage terminal as the original dbt version in Mage not working
 
 
 # Pipeline Architecture
