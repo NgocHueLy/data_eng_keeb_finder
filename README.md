@@ -23,16 +23,17 @@ Disclaimer: Some keyboards will be missing because of bad url format, or missing
 - [Looker Studio](https://lookerstudio.google.com/) to visualize the transformed dataset
 - [Pandas](https://pandas.pydata.org/) to import and transform dataset
 - [Terraform](https://www.terraform.io/) for version control of our infrastructure
-- [Docker](https://docker.io/) for Mage image. I also update dbt to latest version iva Mage terminal as the original dbt version in Mage not working
+- [Docker](https://docker.io/) for Mage image. I also update dbt to latest version via Mage terminal as the original dbt version in Mage not working
 
 
 # Pipeline Architecture
 ![](keeb-finder-pipeline.png)
-- Python script scrape data from keeb-finder.com and save them as csv files. These files were uploaded to GitHub for easier to work with Mage
-- Terraform is used to setup BigQuerry database
+- Python script scrapes data from keeb-finder.com and exports them as csv files. These files then uploaded to GitHub for easier to work with Mage.
+- Terraform is used to setup BigQuerry database.
 - Project keeb-finder create in Mage and use to load and clean data from GitHub to BigQuery. 
-- dbtCore also run inside Mage as dbt blocks to build and load models to BigQuery
-- Looker Studio is used to visualized the transformed dataset by dbt
+- dbtCore also run inside Mage as dbt blocks to build and load models to BigQuery.
+- Looker Studio is used to visualize the transformed dataset.
+
 # Structure of Data Models
 
 ## Linear Graph
@@ -117,5 +118,5 @@ Check this video [here](https://youtu.be/c3ZppKdSG5A?t=212) for details
 # Next Steps
 - More automation with Mage, scape data with Mage and load to GCS instead of GitHub
 - CI/CD run pipeline daily
-- Dockerize environment for reproduction supporting
+- Dockerize Python environment for reproduction supporting
 - Use variable with Terraform
