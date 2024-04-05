@@ -55,4 +55,5 @@ project_uuid: 289cacce74e64880a8f9e3ddd60d25b2
 help_improve_mage: true
 features:
   dbt_v2: true
+  display_local_timezone: true
 pipelines:
